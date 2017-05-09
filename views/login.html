@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Evaluador de Competencias - Ánima Bachillerato Tecnológico</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="{webPath}views/js/login.js?v={version}"></script>
+		<script type="text/javascript">
+			const webPath = "{webPath}";
+		</script>
+	</head>
+	<body>
+		<section class="login" id="login">
+			<form class="login" method="post" action="{webPath}ajax/login/">
+				<input type="email" name="email" id="email"/>
+				<input type="password" name="password" id="password"/>
+				<a href="#" class="btn" id="btnEnviar">Enviar</a>
+				<div id="error"></div>
+			</form>
+		</section>
+	</body>
+</html>

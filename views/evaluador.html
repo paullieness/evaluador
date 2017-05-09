@@ -1,0 +1,16 @@
+<section class="" id="secEvaluador">
+	<h3>Evaluador</h3>
+	<div>Bienvenido {nombre}</div>
+	<!-- Elige Grupo y Materia -->
+	<select name="grupo_materia">
+		{block name="grupo_materia"}
+		<option value="{key}">{value}</option>
+		{/block}
+	</select>
+	<!-- Aparecen alumnos, se indica cuales están evaluados (verde todo, amarillo faltan, rojo nada) -->
+	<div id="evaluadorAlumnos">
+		{alumnos}
+	</div>
+	<!-- Accordeon con Competencias -->
+	<!-- Botón de guardar -->
+</section>
